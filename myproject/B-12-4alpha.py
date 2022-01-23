@@ -52,13 +52,10 @@ class App:
         self.balls = [Ball(), Ball(), Ball()]
 
         pyxel.init(200, 200)
+        pyxel.load("beacon.pyxres")
+        pyxel.blt(20, 20, 0, 0, 0, 35, 35)
 
-        # pyxel.sound(0).set(note='C0', tone='T', volume='7', effect='N', speed=30)
-        # pyxel.sound(1).set(note='B3G3', tone='P', volume='3', effect='N', speed=10)
         self.p = Pad()
-        # pyxel.load("beacon.pyxres")
-        # pyxel.blt(20, 10, 0, 0, 0, 35, 35,)
-        # self.balls.append(Ball())
         pyxel.run(self.update, self.draw)
 
     def update(self):
@@ -71,13 +68,12 @@ class App:
                 pyxel.play(0, 1)
                 Ball.speed += 0.1
                 self.score += 1
-                if self.score % 10 == 0:
+                if self.score % 1 == 0:
                     Ball.speed = 3
                     self.balls.append(Ball())
         self.p.x = pyxel.mouse_x
 
     def draw(self):
-
         pyxel.cls(7)
         for b in self.balls:
             pyxel.circ(b.x, b.y, b.ballcolor, b.ballsize)
