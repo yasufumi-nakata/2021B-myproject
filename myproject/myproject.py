@@ -46,7 +46,6 @@ class App():
             pyxel.blt(200, 250, 2, 0, 0, 252, 208)
 
         # 進行用
-
     def draw(self):
         pyxel.blt(20, 20, 0, 0, 0, 190, 190)
         pyxel.text(200, 200, 'Press SPACEBAR to START', 12)
