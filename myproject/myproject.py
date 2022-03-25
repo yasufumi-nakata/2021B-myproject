@@ -48,7 +48,7 @@ class App():
         #     pyxel.blt(100, 150, 2, 0, 0, 255, 218)
         # if App.sscore == 2:
         #    print("Play.score")
-        print(sscore)
+        # print(sscore)
 
         # 進行用
     def draw(self):
