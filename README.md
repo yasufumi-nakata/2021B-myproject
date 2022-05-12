@@ -26,6 +26,7 @@ Appクラスはこのプログラムの主となるクラスです。各場面�
 このクラスでは最後のボールゲームのゲームの挙動を制御しています。update関数でボールの取得を確認し、draw関数でボールなどの描写をしている。<br>
 
 ### 前調査
-ボールゲームの際のアイコンにはモチーフがある。[モチーフ元](https://www.susumuhirasawa.online/2022zcon)<br>
+ボールゲームの際のアイコンにはモチーフがある。<br>
+[モチーフ元](https://www.susumuhirasawa.online/2022zcon)<br>
 また、ストーリーの元ネタは以下。<br>
 [加藤寛先生: Take Off Rallyのスピーチ](https://youtu.be/axhCdim2njc)
