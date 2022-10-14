@@ -14,10 +14,10 @@ https://user-images.githubusercontent.com/52214705/193990285-566ab7a8-7ace-4ba3-
 
 
 ## このレポジトリについての説明
-[myprojectフォルダ](myproject)の中に全てのコード実行に必要なファイルがあります。　　<br>
-[.gitignoreファイル](.gitignore)はgitの更新の際に無視するファイルを指定しています。基本的には無視して大丈夫なものです。<br>
-[requirements.txtファイル](requirements.txt)には必要となるパッケージとそのバージョンが明記してあります。  <br>
-[README.mdファイル](README.md)はこの文書を表示させています。<br>
+[myproject](myproject)フォルダの中に全てのコード実行に必要なファイルがあります。　　<br>
+[.gitignore](.gitignore)ファイルはgitの更新の際に無視するファイルを指定しています。基本的には無視して大丈夫なものです。<br>
+[requirements.txt](requirements.txt)ファイルには必要となるパッケージとそのバージョンが明記してあります。  <br>
+[README.md](README.md)ファイルはこの文書を表示させています。<br>
 
 ## myprojectフォルダについての説明
 
