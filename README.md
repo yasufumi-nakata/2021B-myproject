@@ -36,4 +36,4 @@ Appクラスはこのプログラムの主となるクラスです。各場面�
 ボールゲームの際のアイコンにはモチーフがある。<br>
 モチーフ元：[INTERACTIVE LIVE SHOW 2022 ZCON SUSUMU HIRASAWA](https://www.susumuhirasawa.online/2022zcon)<br>
 また、ストーリーの元ネタは以下。<br>
-[加藤寛先生: Take Off Rallyのスピーチ](https://youtu.be/axhCdim2njc)
+元ネタ:[加藤寛先生: Take Off Rallyのスピーチ](https://youtu.be/axhCdim2njc)
