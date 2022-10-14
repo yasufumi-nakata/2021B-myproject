@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/52214705/193990285-566ab7a8-7ace-4ba3-
 
 ## myprojectフォルダについての説明
 
-[myproject.pyファイル](myproject.py)はこのゲームの基盤となるファイルです。このファイルを実行することでゲームを遊ぶことができます。　<br>
+[myproject.py](myproject.py)ファイルはこのゲームの基盤となるファイルです。このファイルを実行することでゲームを遊ぶことができます。　<br>
 このファイルのコートはAppクラス、Ballクラス、PadクラスとPlayクラスの４つのクラスから成っています。  
 ### Appクラスについて
 Appクラスはこのプログラムの主となるクラスです。各場面転換をupdate関数で、draw関数で開始時のテキストを表示しています。<br>
