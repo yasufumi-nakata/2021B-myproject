@@ -5,65 +5,31 @@ import math
 
 
 class App():
-    # 全体ゲームの範囲
-    # スタート画面と終了画面を表示する
-    count = 0
-
     def __init__(self):
         pyxel.init(400, 400)
         pyxel.blt(20, 20, 0, 0, 0, 190, 190)
+        self.count = 0
+        self.script = ["script1.pyxres", "script2.pyxres", "script3.pyxres"]
+        self.script_index = 0
+        self.script_frame = 0
         pyxel.run(self.update, self.draw)
 
     def update(self):
         if pyxel.btnp(pyxel.KEY_SPACE):
             self.count += 1
-        if self.count == 0:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 1:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 2:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        elif self.count == 3:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 4:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 5:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        elif self.count == 6:
-            pyxel.load("script3.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 7:
-            pyxel.load("script3.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 8:
-            Play()
-            print("####")
-        #     pyxel.load("script3.pyxres")
-        #     pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        # if App.sscore == 2:
-        #    print("Play.score")
-        # print(sscore)
+            if self.count == 9:
+                Play()
+                print("####")
+            elif self.count > 2:
+                self.script_index = (self.count-1) // 3
+                self.script_frame = (self.count-1) % 3
+                pyxel.load(self.script[self.script_index])
+                pyxel.blt(100, 150, self.script_frame, 0, 0, 255, 218)
+        elif self.count == 0:
+            pyxel.text(10, 10, 'Press SPACEBAR to START', 12)
 
-        # 進行用
     def draw(self):
-        # print("b")
-        #pyxel.blt(20, 20, 0, 0, 0, 190, 190)
-        pyxel.text(10, 10, 'Press SPACEBAR to START', 12)
-        #pyxel.init(400, 400)
-        # pyxel.load("my_resource.pyxres")
-
-        # class Novel:
-        #     def __init__(self):
-        #         pass
-
-        #     def update(self):
-        #     def characters(self):
+        pass
 
 
 class Ball:
