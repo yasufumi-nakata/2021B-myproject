@@ -22,7 +22,9 @@ https://user-images.githubusercontent.com/52214705/193990285-566ab7a8-7ace-4ba3-
 ## myprojectフォルダについての説明
 
 [myproject.py](myproject.py)ファイルはこのゲームの基盤となるファイルです。このファイルを実行することでゲームを遊ぶことができます。　<br>
-このファイルのコートはAppクラス、Ballクラス、PadクラスとPlayクラスの４つのクラスから成っています。  
+このファイルのコートはAppクラス、Ballクラス、PadクラスとPlayクラスの４つのクラスから成っています。  <br>
+
+[script.txt](script.txt)ファイルは画面に映る文字の実際のスクリプトです。
 ### Appクラスについて
 Appクラスはこのプログラムの主となるクラスです。各場面転換をupdate関数で、draw関数で開始時のテキストを表示しています。<br>
 ### Ballクラスについて
@@ -37,3 +39,16 @@ Appクラスはこのプログラムの主となるクラスです。各場面�
 モチーフ元：[INTERACTIVE LIVE SHOW 2022 ZCON SUSUMU HIRASAWA](https://www.susumuhirasawa.online/2022zcon)<br>
 また、ストーリーの元ネタは以下。<br>
 元ネタ:[加藤寛先生: Take Off Rallyのスピーチ](https://youtu.be/axhCdim2njc)
+
+## 評価について（2021秋学期）
+乱数を使用　2点<br>
+リストを使用　3点<br>
+複数個のクラス定義を使用　2点<br>
+self以外の引数を持つメソッドを使用　3点<br>
+キー入力を使用　2点<br>
+マウス座標を使用　2点<br>
+授業で出てこなかった機能を使用　5点<br>
+異なる規則によって動く図形が3種類以上ある　3点<br>
+アルゴリズムの複雑さ（無駄に複雑な部分は評価に含めない）　10点<br>
+ゲームとしての面白さ（ゲーム以外の場合は、その分野における評価）　4点<br>
+独創性　4点<br>
