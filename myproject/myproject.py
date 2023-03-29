@@ -4,9 +4,8 @@ import random
 import math
 
 
-class App():
-    # 全体ゲームの範囲
-    # スタート画面と終了画面を表示する
+class App:
+    # ゲーム全体の状態を管理するクラス
     count = 0
 
     def __init__(self):
@@ -17,53 +16,18 @@ class App():
     def update(self):
         if pyxel.btnp(pyxel.KEY_SPACE):
             self.count += 1
-        if self.count == 0:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 1:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 2:
-            pyxel.load("script1.pyxres")
-            pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        elif self.count == 3:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 4:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 5:
-            pyxel.load("script2.pyxres")
-            pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        elif self.count == 6:
-            pyxel.load("script3.pyxres")
-            pyxel.blt(100, 150, 0, 0, 0, 255, 218)
-        elif self.count == 7:
-            pyxel.load("script3.pyxres")
-            pyxel.blt(100, 150, 1, 0, 0, 255, 218)
-        elif self.count == 8:
+
+        if self.count == 8:
             Play()
             print("####")
-        #     pyxel.load("script3.pyxres")
-        #     pyxel.blt(100, 150, 2, 0, 0, 255, 218)
-        # if App.sscore == 2:
-        #    print("Play.score")
-        # print(sscore)
 
-        # 進行用
+        if self.count < 8:
+            script_name = f"script{self.count // 3 + 1}.pyxres"
+            pyxel.load(script_name)
+            pyxel.blt(100, 150, self.count % 3, 0, 0, 255, 218)
+
     def draw(self):
-        # print("b")
-        # pyxel.blt(20, 20, 0, 0, 0, 190, 190)
         pyxel.text(10, 10, 'Press SPACEBAR to START', 12)
-        # pyxel.init(400, 400)
-        # pyxel.load("my_resource.pyxres")
-
-        # class Novel:
-        #     def __init__(self):
-        #         pass
-
-        #     def update(self):
-        #     def characters(self):
 
 
 class Ball:
@@ -82,7 +46,6 @@ class Ball:
         if (self.x <= 0) or (self.x >= 400):
             self.vx *= -1
         if self.y >= 400:
-            # self.restart()
             self.vy *= -1
         if self.y <= 0:
             self.vy *= -1
@@ -110,13 +73,11 @@ class Play:
     score = 0
 
     def __init__(self):
-
         self.miss = 0
         self.gameover = False
         self.balls = [Ball(), Ball(), Ball()]
 
         pyxel.load("beacon.pyxres")
-
         self.p = Pad()
         pyxel.run(self.update, self.draw)
 
