@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/52214705/193990285-566ab7a8-7ace-4ba3-
 
 ## myprojectフォルダについての説明
 
-[myproject.py](myproject.py)ファイルはこのゲームの基盤となるファイルです。このファイルを実行することでゲームを遊ぶことができます。　<br>
+[myproject.py](myproject/myproject.py)ファイルはこのゲームの基盤となるファイルです。このファイルを実行することでゲームを遊ぶことができます。　<br>
 このファイルのコートはAppクラス、Ballクラス、PadクラスとPlayクラスの４つのクラスから成っています。  <br>
 
 [script.txt](script.txt)ファイルは画面に映る文字の実際のスクリプトです。
